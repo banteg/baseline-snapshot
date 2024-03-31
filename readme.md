@@ -88,4 +88,4 @@ Decimals and units are handled carefully. Raw token amounts are preferred till t
 
 ## Team Wallet Balances
 
-A separate `unwrap_team` function snapshots the balances of a hardcoded list of team wallet addresses. These balances were sacrificed in the Operation YEV, so they are snapshotted on block prior than everything else.
+A separate `unwrap_team` function snapshots the balances and credit accounts of a hardcoded list of team wallet addresses. These balances and accounts were sacrificed in the Operation YEV, so they are snapshotted one block prior than everything else.
