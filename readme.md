@@ -15,8 +15,27 @@ The script performs the following main steps:
 
 ## Requirements
 
-- Python 3.10+ 
-- Dependencies in requirements.txt (install with `pip install -r requirements.txt`)
+- Install Python 3.10+
+
+`pyenv` is a good option, it allows you to install multiple versions
+```sh
+curl https://pyenv.run | bash
+pyenv install 3.11
+pyenv global 3.11
+```
+
+- Install `uv` ([docs](https://github.com/astral-sh/uv))
+```sh
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+- Install dependencies
+```sh
+uv venv
+source .venv/bin/activate  # may differ for your shell
+uv pip sync requirements.txt
+```
+
 - Blast archive node provider URL
     - A paid Quicknode works, you may need to adjust the batch size and rate limits down on a public node.
 
@@ -28,7 +47,8 @@ To specify the RPC provider, create an `ape-config.yaml` file with the following
 geth:
   blast:
     mainnet:
-      uri: https://rpc.blast.io  # replace with your archive node
+      # replace with your archive node
+      uri: https://rpc.blast.io
 ```
 
 ## Usage
