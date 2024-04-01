@@ -26,6 +26,8 @@ asttokens==2.4.1
     # via stack-data
 async-lru==2.0.4
     # via jupyterlab
+async-timeout==4.0.3
+    # via aiohttp
 attrs==23.2.0
     # via
     #   aiohttp
@@ -167,6 +169,11 @@ evm-trace==0.1.2
     # via eth-ape
 evmchains==0.0.4
     # via eth-ape
+exceptiongroup==1.2.0
+    # via
+    #   anyio
+    #   ipython
+    #   pytest
 executing==2.0.1
     # via stack-data
 fastjsonschema==2.19.1
@@ -508,6 +515,10 @@ terminado==0.18.1
     #   jupyter-server-terminals
 tinycss2==1.2.1
     # via nbconvert
+tomli==2.0.1
+    # via
+    #   jupyterlab
+    #   pytest
 toolz==0.12.1
     # via cytoolz
 tornado==6.4
@@ -541,6 +552,8 @@ types-python-dateutil==2.9.0.20240316
     # via arrow
 typing-extensions==4.10.0
     # via
+    #   anyio
+    #   async-lru
     #   eth-pydantic-types
     #   eth-rlp
     #   eth-typing
