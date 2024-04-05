@@ -1,3 +1,4 @@
 cache
 ape-config.yaml
 .venv
+.DS_Store
