@@ -356,7 +356,7 @@ pluggy==1.4.0
     # via
     #   eth-ape
     #   pytest
-polars==0.20.17
+polars==0.20.18
 prometheus-client==0.20.0
     # via jupyter-server
 prompt-toolkit==3.0.43

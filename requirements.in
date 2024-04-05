@@ -6,7 +6,8 @@ joblib
 rich
 toolz
 tqdm
-polars
+polars>=0.20.18
+pandas
 jupyterlab
 setuptools
 ipywidgets
