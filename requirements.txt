@@ -96,7 +96,7 @@ eth-account==0.10.0
     #   eth-ape
     #   eth-tester
     #   web3
-eth-ape @ git+https://github.com/ApeWorX/ape.git@f5b6c7a91defeee74cc329479a8f76db24e35eab
+eth-ape==0.7.14
     # via
     #   ape-blast
     #   ape-etherscan
