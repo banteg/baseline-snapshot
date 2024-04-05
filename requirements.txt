@@ -97,7 +97,7 @@ eth-account==0.10.0
     #   eth-ape
     #   eth-tester
     #   web3
-eth-ape==0.7.13
+eth-ape @ git+https://github.com/ApeWorX/ape.git@f5b6c7a91defeee74cc329479a8f76db24e35eab
     # via
     #   ape-blast
     #   ape-etherscan
@@ -310,6 +310,7 @@ mypy-extensions==1.0.0
     # via
     #   py-ecc
     #   py-evm
+nb-clean==3.2.0
 nbclient==0.10.0
     # via nbconvert
 nbconvert==7.16.3
@@ -317,6 +318,7 @@ nbconvert==7.16.3
 nbformat==5.10.3
     # via
     #   jupyter-server
+    #   nb-clean
     #   nbclient
     #   nbconvert
 nest-asyncio==1.6.0

@@ -1,6 +1,6 @@
-eth-ape
 ape-blast
 ape-etherscan
+git+https://github.com/ApeWorX/ape.git@f5b6c7a91defeee74cc329479a8f76db24e35eab
 evmchains
 diskcache
 rich
@@ -10,3 +10,4 @@ polars
 jupyterlab
 setuptools
 ipywidgets
+nb-clean
