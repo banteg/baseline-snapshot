@@ -39,6 +39,12 @@ uv pip sync requirements.txt
 - Blast archive node provider URL
     - A paid Quicknode works, you may need to adjust the batch size and rate limits down on a public node.
 
+## Development
+
+Run `nb-clean clean -o baseline-snapshot.ipynb` before making a commit. This would retain the outputs while removing metadata like execution counts and last execution time from the notebook and will make the diff smaller.
+
+You can also install a local git filter with `nb-clean add-filter --preserve-cell-outputs` that would do this automatically when staging the notebook.
+
 ## Configuration
 
 To specify the RPC provider, create an `ape-config.yaml` file with the following content:
